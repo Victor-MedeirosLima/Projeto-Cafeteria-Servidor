@@ -1,6 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import { createClient } from '@supabase/supabase-js';
+import cors from "cors";
 
 // Importar rotas
 import usuariosRoutes from './routes/usuarios.js';
