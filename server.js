@@ -10,7 +10,7 @@ import pedidosRoutes from './routes/pedidos.js';
 dotenv.config();
 
 const app = express();
-
+app.use(cors());
 // Conectar ao Supabase
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 
